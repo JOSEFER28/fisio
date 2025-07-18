@@ -1,15 +1,20 @@
 {
   "name": "fisioplay",
   "version": "1.0.0",
-  "description": "Aplicación web interactiva para fisioterapeutas.",
+  "description": "Aplicación web interactiva para futuros fisioterapeutas.",
   "main": "index.html",
   "scripts": {
     "start": "serve -s ."
   },
-  "keywords": [],
+  "keywords": [
+    "fisioterapia",
+    "educación",
+    "quiz",
+    "firebase"
+  ],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "serve": "^14.2.1"
   }
 }

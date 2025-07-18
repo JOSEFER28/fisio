@@ -21,6 +21,7 @@ FisioPlay es una aplicación web interactiva diseñada para ayudar a futuros fis
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1.  **Clona el repositorio**:
+
     ```bash
     git clone <URL_DEL_REPOSITORIO>
     cd FisioPlay
@@ -35,7 +36,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
       projectId: "TU_PROYECTO",
       storageBucket: "TU_PROYECTO.appspot.com",
       messagingSenderId: "XXXXXXXXXXX",
-      appId: "TU_APP_ID"
+      appId: "TU_APP_ID",
     };
     ```
 
@@ -43,10 +44,10 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 ## Tecnologías Utilizadas
 
--   HTML5
--   CSS3
--   JavaScript
--   Firebase (Firestore para la base de datos)
+- HTML5
+- CSS3
+- JavaScript
+- Firebase (Firestore para la base de datos)
 
 ## Contribuciones
 
