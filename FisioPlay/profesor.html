@@ -2,15 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>FisioPlay - Panel Profesor</title>
+    <title>FisioPlay - Panel Estudiante</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   </head>
   <body>
     <header>
-      <h1>Panel Profesor</h1>
+      <h1>Panel Estudiante</h1>
     </header>
+    <nav style="text-align: center; margin: 20px">
+      <a href="index.html">Inicio</a> |
+      <a href="estudiante.html">Estudiante</a> |
+      <a href="profesor.html">Profesor</a> |
+      <a href="admin.html">Administrador</a>
+    </nav>
     <section>
       <h2>Subir Palabra/Guía para Juegos</h2>
       <input type="text" id="palabra-guia" placeholder="Palabra o término" />

@@ -5,5 +5,30 @@
   "main": "index.html",
   "scripts": {
     "start": "serve -s ."
-  }
+  },
+  "navigation": {
+    "style": {
+      "text-align": "center",
+      "margin": "20px"
+    },
+    "links": [
+      {
+        "href": "index.html",
+        "text": "Inicio"
+      },
+      {
+        "href": "estudiante.html",
+        "text": "Estudiante"
+      },
+      {
+        "href": "profesor.html",
+        "text": "Profesor"
+      },
+      {
+        "href": "admin.html",
+        "text": "Administrador"
+      }
+    ]
+  },
+  "navHtml": "<nav style=\\\"text-align:center; margin:20px;\\\">\\n  <a href=\\\"index.html\\\">Inicio</a> |\\n  <a href=\\\"estudiante.html\\\">Estudiante</a> |\\n  <a href=\\\"profesor.html\\\">Profesor</a> |\\n  <a href=\\\"admin.html\\\">Administrador</a>\\n</nav>"
 }
