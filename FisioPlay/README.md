@@ -1,12 +1,20 @@
 # FisioPlay
 
-FisioPlay es una aplicación web interactiva diseñada para ayudar a futuros fisioterapeutas a aprender y mejorar sus habilidades clínicas a través de juegos educativos y seguimiento de progreso.
+Aplicación web interactiva para el aprendizaje de fisioterapia, con paneles para estudiantes y profesores, juegos educativos y gestión de progreso.
 
-## Características
+## Funcionalidades
 
-- **Quiz Interactivo**: Pon a prueba tus conocimientos de anatomía y fisiología.
-- **Seguimiento de Progreso**: Visualiza tus resultados y módulos completados.
-- **Interfaz Amigable**: Diseño intuitivo para una experiencia de aprendizaje agradable.
+- Registro y login por roles (estudiante, profesor, admin)
+- Panel de profesor para subir palabras/guías
+- Juegos educativos: sopa de letras, autocompletar, nombrar partes del cuerpo
+- Guardado de progreso en Firestore
+- Interfaz visual y amigable
+
+## Despliegue
+
+1. Clona el repositorio.
+2. Configura tu Firebase en `main.js`.
+3. Ejecuta localmente con `npx serve .` o sube a Render como Static Site.
 
 ## Estructura del Proyecto
 

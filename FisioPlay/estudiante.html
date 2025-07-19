@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>FisioPlay - Panel Estudiante</title>
-  <link rel="stylesheet" href="style.css">
-
-  <script src="main.js"></script>
-  <script>
-    mostrarResultados("usuarioEjemplo");
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FisioPlay - Panel Estudiante</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Panel Estudiante</h1>
+    </header>
+    <section>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          margin: 20px 0;
+        "
+      >
+        <img
+          src="https://cdn.pixabay.com/photo/2017/01/31/13/14/physiotherapy-2026992_1280.png"
+          alt="Fisioterapia"
+          width="100"
+          style="border-radius: 20px"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2016/03/31/20/11/physiotherapist-1294361_1280.png"
+          alt="Ejercicio"
+          width="100"
+          style="border-radius: 20px"
+        />
+      </div>
+      <ul>
+        <li><button id="btn-registrar">Registrarse</button></li>
+        <li id="li-jugar" style="display: none">
+          <button id="btn-jugar">Jugar</button>
+        </li>
+        <li><button id="btn-sopa">Sopa de Letras</button></li>
+        <li><button id="btn-autocompletar">Autocompletar Palabras</button></li>
+        <li><button id="btn-cuerpo">Nombrar Partes del Cuerpo</button></li>
+        <li>Aprender</li>
+        <li>Ver guías del profesor</li>
+      </ul>
+      <!-- Juegos -->
+      <div id="sopa-container" style="display: none"></div>
+      <div id="autocompletar-container" style="display: none"></div>
+      <div id="cuerpo-container" style="display: none"></div>
+      <!-- Modal de registro -->
+      <div id="modal-registro" class="modal">
+        <div class="modal-content">
+          <span class="close" id="cerrar-modal">&times;</span>
+          <h3>Registro de Estudiante</h3>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre completo"
+            required
+          /><br />
+          <input
+            type="email"
+            id="correo"
+            placeholder="Correo electrónico"
+            required
+          /><br />
+          <button id="registrar-estudiante">Registrar</button>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>FisioPlay - Inicio</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FisioPlay - Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>FisioPlay 🎮 Aprende Jugando</h1>
+      <nav>
+        <a href="juegos.html">Juegos Educativos</a>
+        <a href="estudiante.html">Panel Estudiante</a>
+      </nav>
+    </header>
 
+    <section>
+      <h2>Bienvenido/a futuro fisioterapeuta</h2>
+      <p>
+        Explora los módulos de aprendizaje interactivo para mejorar tus
+        habilidades clínicas.
+      </p>
+      <a href="juegos.html" class="btn">Comenzar a jugar</a>
+    </section>
 
-</head>
-<body>
-  <header>
-    <h1>FisioPlay 🎮 Aprende Jugando</h1>
-    <nav>
-      <a href="juegos.html">Juegos Educativos</a>
-      <a href="estudiante.html">Panel Estudiante</a>
-    </nav>
-  </header>
+    <section id="login-section">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+        <input
+          type="email"
+          id="login-email"
+          placeholder="Correo electrónico"
+          required
+        /><br />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Contraseña"
+          required
+        /><br />
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="login-error" style="color: red"></div>
+    </section>
 
-  <section>
-    <h2>Bienvenido/a futuro fisioterapeuta</h2>
-    <p>Explora los módulos de aprendizaje interactivo para mejorar tus habilidades clínicas.</p>
-    <a href="juegos.html" class="btn">Comenzar a jugar</a>
-  </section>
-</body>
+    <!-- Dentro de <body> en estudiante.html -->
+    <ul>
+      <li><button id="btn-registrar">Registrarse</button></li>
+      <li id="li-jugar" style="display: none">
+        <button id="btn-jugar">Jugar</button>
+      </li>
+      <li>Aprender</li>
+      <li>Ver guías del profesor</li>
+      <li><button id="btn-autocompletar">Autocompletar Palabras</button></li>
+    </ul>
+    <!-- Modal de registro -->
+    <div id="modal-registro" class="modal">
+      <div class="modal-content">
+        <span class="close" id="cerrar-modal">&times;</span>
+        <h3>Registro de Estudiante</h3>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre completo"
+          required
+        /><br />
+        <input
+          type="email"
+          id="correo"
+          placeholder="Correo electrónico"
+          required
+        /><br />
+        <button id="registrar-estudiante">Registrar</button>
+      </div>
+    </div>
+    <div id="autocompletar-container" style="display: none"></div>
+
+    <style>
+      body {
+        background: url("https://cdn.pixabay.com/photo/2017/01/31/13/14/physiotherapy-2026992_1280.png")
+          no-repeat center center fixed;
+        background-size: cover;
+      }
+      #login-section {
+        background: rgba(255, 255, 255, 0.92);
+        max-width: 350px;
+        margin: 80px auto;
+        padding: 30px 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+      }
+    </style>
+  </body>
 </html>
